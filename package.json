@@ -1,0 +1,27 @@
+{
+  "name": "react_file_uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js --prefix back-end",
+    "server": "nodemon server.js --prefix back-end",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewMorrow/react_file_uploader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewMorrow/react_file_uploader/issues"
+  },
+  "homepage": "https://github.com/AndrewMorrow/react_file_uploader#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12"
+  }
+}
