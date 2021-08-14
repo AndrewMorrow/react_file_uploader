@@ -7,13 +7,14 @@ app.use(fileUpload())
 
 // Upload Endpoint
 app.post("/upload", (req, res)=>{
+  console.log("RUNNING")
   if(req.files === null){
     return res.status(400).json({message: "No file was uploaded"})
   }
 
   const file = req.files.file
 
-  file.mv(`${__dirname}/client/public/uploads/${file.name}`, err =>{
+  file.mv(`${__dirname}/../client/public/uploads/${file.name}`, err =>{
     
     if(err){
       console.error(err)
